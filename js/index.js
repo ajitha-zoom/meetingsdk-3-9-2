@@ -87,7 +87,7 @@ function websdkready() {
       testTool.setCookie("meeting_number", meetingConfig.mn);
       testTool.setCookie("meeting_pwd", meetingConfig.pwd);
 
-      fetch(`https://zlab.zoom.us/msdk-auth`, {
+      fetch(`https://6kqchey0j2.execute-api.us-east-1.amazonaws.com/latest`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
@@ -151,7 +151,7 @@ function websdkready() {
       return false;
     }
     
-    fetch(`https://zlab.zoom.us/msdk-auth`, {
+    fetch(`https://6kqchey0j2.execute-api.us-east-1.amazonaws.com/latest`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
